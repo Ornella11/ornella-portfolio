@@ -18,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={montserrat.className}>{children}
+      <body className={`${montserrat.className} tracking-tight`}>
+        {children}
       </body>
     </html>
   );

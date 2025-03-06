@@ -16,8 +16,13 @@ export default {
         gray: {
           DEFAULT: '#9D9D9D',
           100: '#F2F2F2',
+          200: '#DBDBDB',
         },
-        yellow: '#EDFF68',
+        yellow: '#F8FF2E',
+        blue: {
+          DEFAULT: '#2389BF',
+          100: '#D0E8FC',
+        },
       },
     },
   },

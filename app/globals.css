@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    cursor: url('/assets/svg/cursor.svg') 12 12, auto;
+  }
