@@ -1,38 +1,36 @@
-import { div } from 'framer-motion/client'
-import React from 'react'
-import Link from 'next/link' 
+import React from "react";
+import Link from "next/link";
 
 interface ButtonProps {
   text: string;
   href: string;
   external?: boolean;
+  className?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ text, href, external = false }) => {
+const Button: React.FC<ButtonProps> = ({ text, href, external = false, className }) => {
   return (
     <div>
       {external ? (
-        // 🔗 Lien EXTERNE (ouvre dans un nouvel onglet)
+        // 🔗 Lien EXTERNE
         <a 
           href={href} 
           target="_blank" 
           rel="noopener noreferrer"
-          className="px-2 py-1 text-gray tracking-widest text-sm hover:rounded-[10px] font- transition-all duration-300 ease-in-out hover:bg-gray-100"
+          className={className}
         >
           {text}
         </a>
       ) : (
         // 🔗 Lien INTERNE (Next.js)
         <Link href={href} passHref>
-          <button 
-            className="px-2 py-1 text-gray tracking-widest text-sm hover:rounded-[10px] font- transition-all duration-300 ease-in-out hover:bg-gray-100"
-          >
+          <button className={className}>
             {text}
           </button>
         </Link>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
