@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
 
         <div className='relative top-20'>
-          <Button text={'ENTER'} href={'/projects'} className={'px-2 py-1 text-white rounded-[10px] tracking-widest text-sm transition-all duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.2)]'} />
+          <Button text={'ENTRER'} href={'/projects'} className={'px-2 py-1 text-white rounded-[10px] tracking-widest text-sm transition-all duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.2)]'} />
         </div>
 
       </div>
