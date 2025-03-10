@@ -42,21 +42,21 @@ const ListProjects: React.FC<ProjectsProps> = ({ title, description, tools, date
                 <div className="w-full md:w-2/3 flex flex-col items-center">
 
                     {/* Date, Rôle, Lien */}
-                    <div className="w-full flex gap-6 mb-4">
+                    <div className="w-full flex gap-6 mb-4 items-center flex-row pl-[15px] md:pl-0">
 
                         <div className="flex-col-col items-center gap-2">
                             <p className="text-gray font-semibold">Date :</p>
                             <p className="text-black">{date}</p>
                         </div>
                         <div className="flex-col items-center gap-2">
-                            <p className="text-gray font-semibold">Rôle :</p>
-                            <p className="text-black">{role}</p>
-                        </div>
-                        <div className="flex-col items-center gap-2">
                             <p className="text-gray font-semibold">Lien :</p>
                             <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
                                 Voir le projet
                             </a>
+                        </div>
+                        <div className="flex-col items-center gap-2">
+                            <p className="text-gray font-semibold">Rôle :</p>
+                            <p className="text-black">{role}</p>
                         </div>
 
                     </div>
