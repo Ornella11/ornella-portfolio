@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Button from "./Button";
+import Link from "next/link";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,9 +31,9 @@ const Navbar = () => {
         {/* Logo à gauche */}
         {/* <div className="text-yellow font-semibold text-lg z-10" >Ornella Ormb .</div> */}
         <div className="z-10">
-          <a href="/" className="text-yellow font-semibold text-lg">
+          <Link href="/" className="text-yellow font-semibold text-lg">
             Ornella Ormb .
-          </a>
+          </Link>
         </div>
 
         {/* Bouton menu burger / Close */}

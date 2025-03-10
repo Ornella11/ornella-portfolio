@@ -1,5 +1,6 @@
 import React from 'react'
 import ButtonTechnologies from './ButtonTechnologies';
+import Image from 'next/image';
 
 interface ProjectsProps {
     title: string;
@@ -63,7 +64,7 @@ const ListProjects: React.FC<ProjectsProps> = ({ title, description, tools, date
 
                     {/* Image */}
                     <div className="w-full shadow-lg h-[200px] md:h-[220px] rounded-xl overflow-hidden">
-                        <img src={image} alt={title} className="w-full h-full object-cover rounded-t-xl md:rounded-xl" />
+                        <Image src={image} alt={title} width={1000} height={500} className="w-full h-full object-cover rounded-t-xl md:rounded-xl" />
                     </div>
 
                 </div>
