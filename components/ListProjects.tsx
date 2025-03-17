@@ -7,12 +7,12 @@ interface ProjectsProps {
     description: string;
     tools: string[];
     date: number;
-    role: string;
+    category: string;
     link: string;
     image: string;
 }
 
-const ListProjects: React.FC<ProjectsProps> = ({ title, description, tools, date, role, link, image }) => {
+const ListProjects: React.FC<ProjectsProps> = ({ title, description, tools, date, category, link, image }) => {
     return (
         <div className='relative w-full flex justify-between items-center mx-4 my-8'>
 
@@ -56,8 +56,8 @@ const ListProjects: React.FC<ProjectsProps> = ({ title, description, tools, date
                             </a>
                         </div>
                         <div className="flex-col items-center gap-2">
-                            <p className="text-gray font-semibold">Rôle :</p>
-                            <p className="text-black">{role}</p>
+                            <p className="text-gray font-semibold">Catégorie :</p>
+                            <p className="text-black">{category}</p>
                         </div>
 
                     </div>
