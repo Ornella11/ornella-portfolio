@@ -14,22 +14,19 @@ interface ProjectsProps {
 
 const ListProjects: React.FC<ProjectsProps> = ({ title, description, tools, date, category, link, image }) => {
     return (
-        <div className='relative w-full flex justify-between items-center mx-4 my-8'>
+        <div className='relative w-full flex justify-between items-stretch mx-4 my-8 py-5'>
 
-            {/* Conteneur avec image et description */}
-            <div className="flex flex-col md:flex-row w-full h-full p-2">
+            {/* Conteneur principal */}
+            <div className="flex flex-col md:flex-row w-full h-full p-2 gap-4">
 
-
-                {/* Partie de gauche - titre et description */}
-                <div className='w-full md:w-1/3 p-4 flex flex-col justify-between'>
+                {/* Partie gauche - titre et description */}
+                <div className='w-full md:w-1/3 px-4 flex flex-col justify-between'>
                     <h1 className="text-4xl font-semibold uppercase">{title}</h1>
 
                     <div className='flex flex-col flex-grow justify-end'>
                         <div>
-                            {/* Description */}
                             <p className="text-black text-sm">{description}</p>
 
-                            {/* Boutons des technologies */}
                             <div className="flex flex-wrap gap-1 pt-3">
                                 {tools.map((tool, index) => (
                                     <ButtonTechnologies text={tool} key={index} />
@@ -39,7 +36,7 @@ const ListProjects: React.FC<ProjectsProps> = ({ title, description, tools, date
                     </div>
                 </div>
 
-                {/* Partie de droite - info et image */}
+                {/* Partie droite - info et image */}
                 <div className="w-full md:w-2/3 flex flex-col items-center">
 
                     {/* Date, Rôle, Lien */}
@@ -59,19 +56,18 @@ const ListProjects: React.FC<ProjectsProps> = ({ title, description, tools, date
                             <p className="text-gray font-semibold">Catégorie :</p>
                             <p className="text-black">{category}</p>
                         </div>
-
                     </div>
 
                     {/* Image */}
                     <div className="w-full shadow-lg h-[200px] md:h-[220px] rounded-xl overflow-hidden">
-                        <Image src={image} alt={title} width={1000} height={500} className="w-full h-full object-cover rounded-t-xl md:rounded-xl" />
+                        <Image src={image} alt={title} width={1000} height={500} className="w-full h-full object-cover rounded-t-xl md:rounded-xl bg-black/20" />
                     </div>
 
                 </div>
             </div>
-
         </div>
     )
 }
+
 
 export default ListProjects
