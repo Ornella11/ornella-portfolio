@@ -9,6 +9,15 @@ const ProjectSection = () => {
       <div className="grid grid-cols-1 gap-4 m-2">
         {[
           {
+            title: "Le BUT MMI",
+            image: "/assets/projets/butMmi.png",
+            description: "Dans ce projet, je suis initiée au développement mobile en réalisant une application interactive illustrant les étapes de création d’une limonade.",
+            tools: ['JavaScript', 'MongoDB', 'Nunjucks', 'CSS'],
+            date: 2025,
+            category: "Back-end",
+            link: "https://github.com/dancodeur/SAE-501",
+          },
+          {
             title: "Limonade App - Android studio",
             image: "/assets/projets/limonadeApp.png",
             description: "Dans ce projet, je suis initiée au développement mobile en réalisant une application interactive illustrant les étapes de création d’une limonade.",

@@ -76,7 +76,7 @@ const Navbar = () => {
             <Button className={buttonClassNameMobile} text="Mail" href="mailto:Ornellaormb@gmail.com" external />
             <Button className={buttonClassNameMobile} text="GitHub" href="https://github.com/Ornella11" external />
             <Button className={buttonClassNameMobile} text="LinkedIn" href="https://www.linkedin.com/in/ornella-motengo-bauti-35b438256/" external />
-            <Button className={buttonClassNameMobile} text="Curriculum vitæ" href="/assets/cv.pdf" external />
+            <Button className={buttonClassNameMobile} text="Curriculum vitæ" href="/assets/pdf/Cv_Ornella_Motengo-Bauti.pdf" external />
           </div>
         )}
 
@@ -85,7 +85,7 @@ const Navbar = () => {
           <Button className={buttonClassName} text="Mail" href="mailto:Ornellaormb@gmail.com" external />
           <Button className={buttonClassName} text="GitHub" href="https://github.com/Ornella11" external />
           <Button className={buttonClassName} text="LinkedIn" href="https://www.linkedin.com/in/ornella-motengo-bauti-35b438256/" external />
-          <Button className={buttonClassName} text="Curriculum vitæ" href="/assets/cv.pdf" external />
+          <Button className={buttonClassName} text="Curriculum vitæ" href="/assets/pdf/Cv_Ornella_Motengo-Bauti.pdf" external />
         </div>
       </div>
     </nav>
