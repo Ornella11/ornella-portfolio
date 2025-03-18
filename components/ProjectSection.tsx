@@ -11,8 +11,8 @@ const ProjectSection = () => {
           {
             title: "Le BUT MMI",
             image: "/assets/projets/butMmi.png",
-            description: "Dans ce projet, je suis initiée au développement mobile en réalisant une application interactive illustrant les étapes de création d’une limonade.",
-            tools: ['JavaScript', 'MongoDB', 'Nunjucks', 'CSS'],
+            description: "Dans ce projet, nous avons crée un site web présentant la formation du BUT des Métiers du Multimédia et de l'Internet. Nous avons apporté une amélioration du site avec des technologies modernes (Nunjucks, Vite, Express) après l’avoir développé en HTML/CSS et en PHP/MySQL , en explorant de nouveaux outils avec autonomie et accompagnement.",
+            tools: ['JavaScript', 'MongoDB', 'Nunjucks', 'CSS', 'Vue.js', 'Express.js'],
             date: 2025,
             category: "Back-end",
             link: "https://github.com/dancodeur/SAE-501",
